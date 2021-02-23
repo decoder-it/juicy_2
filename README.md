@@ -1,10 +1,11 @@
 # juicy_2
-juicypotato for win10 > 1803 &amp; win server 2019<br>
+JuicyPotato for Win10 > 1803 &amp; Win Server 2019<br>
+Please read my blog post first: https://decoder.cloud/2020/05/30/the-impersonation-game/ <br>
+<hr>
 <b>Disclaimer:</b><br>
-This is just a quick & dirty modification of our JuicyPotato in order to test valid CLSID's an to impersonate (YOU NEED IMPERSONATION PRIVILEGES)them for newer windows 10 and windows server 2019 platforms.<br>
+This is just a quick & dirty modification of our JuicyPotato in order to test valid CLSID's an to impersonate them (YOU NEED IMPERSONATION PRIVILEGES) for newer Windows 10 and Windows Server 2019 platforms.<br>
 (I know, this version is catched by Defender and other AV's, but with some modifications in code it's easy to bypass)
 <hr>
-
 Mandatory requisite is to have the possibility to reidirect traffic for port 135 on a forwarder machine under you control.<br>
 Feel free to improve the code, I was too lazy for this kind of stuff. <br>
 <hr>
