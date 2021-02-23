@@ -1,11 +1,11 @@
 # juicy_2
 juicypotato for win10 > 1803 &amp; win server 2019<br>
-Disclaimer:
-This is just a quick & dirty modification of our JuicyPotato in order to test valid clisd an to impersonate them for newer windows 10 and windows server 2019 platforms.
+<b>Disclaimer:</b><br>
+This is just a quick & dirty modification of our JuicyPotato in order to test valid CLSID's an to impersonate them for newer windows 10 and windows server 2019 platforms.<br>
 (I know, this version is catched by Defender and other AV's, but with some modifications in code it's easy to bypass)
 <br>
-Mandatory requisite is to have the possibility to reidirect traffic for port 135 on a forwarder machine under you control.
-Feel free to improve the code, I was too lazy for this kind of stuff. 
+Mandatory requisite is to have the possibility to reidirect traffic for port 135 on a forwarder machine under you control.<br>
+Feel free to improve the code, I was too lazy for this kind of stuff. <br>
 <br><br>
 For testing CLSID:<br>
 juicy_2 -z -x [ip] of socat listener  -l [fake oxid resolver port] -n [local RPC server port] -c [CLSID] to test:<br>
